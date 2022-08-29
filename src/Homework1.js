@@ -3,15 +3,10 @@
 function Homework1 (props) {
 	return (
 		<>
-		
+			<p>{props.data.p1}</p>
 		</>
 	);
 }
-
-
-function Homework1 (props) {
-  
-};
 
 
 export default Homework1;
