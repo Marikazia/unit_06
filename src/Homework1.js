@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useState } from 'react';
 
 class Homework1 extends React.Component  {
 	constructor (props) {
@@ -32,16 +32,36 @@ class Homework1 extends React.Component  {
 		)
 	}
 
-	const[st6, setSt6] = useState();
-	let out6=React.createRef();
-  function task6(event) {
-		out6 = event.target.value;
-		console.log(event.target.value);
+	DidMount() {
+		s1 = s1 + 5;
+		s2 = s2 + 5;
+	}
 
-		setSt6(out6);
-  }
+
 
 }
 
+function newFunc() {
+	const[t3, setSt3] = useState();
+	let out=React.createRef();
+  function buttonHander(event) {
+		let currentState = t3;
+		currentState = ( DidMount * 10 );
+		// out = event.target.value;
+		// console.log(event.target.value);
+
+		setSt3(out);
+  }
+
+	return (
+		<section>
+			<div ref={out}>{t3}</div>
+			<button onClick={buttonHander}> </button>
+		</section>
+	)
+}
+
 export default Homework1;
+
+export default newFunc;
 
