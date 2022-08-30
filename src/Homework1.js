@@ -8,8 +8,9 @@ class Homework1 extends React.Component  {
 		this.state = {
 			s1: props.p1
 		}
-		let s2 = 201
-
+		let s2 = 201;
+		console.log(props);
+		console.log(props);
 	};
 
 	// const[stp1, setSt1] = useState();
@@ -37,31 +38,33 @@ class Homework1 extends React.Component  {
 		s2 = s2 + 5;
 	}
 
+	function newFunc1() {
+		const[t3, setSt3] = useState();
+		let out=React.createRef();
+		function buttonHander(event) {
+			let currentState = t3;
+			currentState = ( DidMount * 10 );
+			// out = event.target.value;
+			// console.log(event.target.value);
 
+			setSt3(out);
+		}
+
+		return (
+			<section>
+				<div ref={out}>{t3}</div>
+				<button onClick={buttonHander}> </button>
+			</section>
+		)
+	}
+
+	return newFunc1;
 
 }
 
-function newFunc() {
-	const[t3, setSt3] = useState();
-	let out=React.createRef();
-  function buttonHander(event) {
-		let currentState = t3;
-		currentState = ( DidMount * 10 );
-		// out = event.target.value;
-		// console.log(event.target.value);
 
-		setSt3(out);
-  }
-
-	return (
-		<section>
-			<div ref={out}>{t3}</div>
-			<button onClick={buttonHander}> </button>
-		</section>
-	)
-}
 
 export default Homework1;
 
-export default newFunc;
+// export default newFunc;
 
