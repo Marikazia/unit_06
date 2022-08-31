@@ -9,8 +9,8 @@ class Homework1 extends React.Component  {
 			s1: props.p1
 		}
 		let s2 = 201;
-		console.log(props);
-		console.log(props);
+		console.log(s1);
+		console.log(s2);
 	};
 
 	// const[stp1, setSt1] = useState();
@@ -33,7 +33,7 @@ class Homework1 extends React.Component  {
 		)
 	}
 
-	DidMount() {
+	componentDidMount() {
 		s1 = s1 + 5;
 		s2 = s2 + 5;
 	}
@@ -67,4 +67,8 @@ class Homework1 extends React.Component  {
 export default Homework1;
 
 // export default newFunc;
-
+<h1></h1>
+<ul>
+	<li> <p> </p></li>
+	<li> <p> </p></li>
+</ul>
