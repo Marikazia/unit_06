@@ -4,7 +4,7 @@ import Homework1 from './Homework1'
 import { useState } from 'react';
 
 const Homework1Data = {
-	p1 : 88,
+	p1 : 88
 }
 
 function App(props, state) {
