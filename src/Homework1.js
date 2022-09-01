@@ -38,27 +38,27 @@ class Homework1 extends React.Component  {
 		s2 = s2 + 5;
 	}
 
-	function newFunc1() {
-		const[t3, setSt3] = useState();
-		let out=React.createRef();
-		function buttonHander(event) {
-			let currentState = t3;
-			currentState = ( DidMount * 10 );
-			// out = event.target.value;
-			// console.log(event.target.value);
+// 	function newFunc1() {
+// 		const[t3, setSt3] = useState();
+// 		let out=React.createRef();
+// 		function buttonHander(event) {
+// 			let currentState = t3;
+// 			currentState = ( DidMount * 10 );
+// 			// out = event.target.value;
+// 			// console.log(event.target.value);
 
-			setSt3(out);
-		}
+// 			setSt3(out);
+// 		}
 
-		return (
-			<section>
-				<div ref={out}>{t3}</div>
-				<button onClick={buttonHander}> </button>
-			</section>
-		)
-	}
+// 		return (
+// 			<section>
+// 				<div ref={out}>{t3}</div>
+// 				<button onClick={buttonHander}> </button>
+// 			</section>
+// 		)
+// 	}
 
-	return newFunc1;
+// 	return newFunc1;
 
 }
 
@@ -67,8 +67,3 @@ class Homework1 extends React.Component  {
 export default Homework1;
 
 // export default newFunc;
-<h1></h1>
-<ul>
-	<li> <p> </p></li>
-	<li> <p> </p></li>
-</ul>
