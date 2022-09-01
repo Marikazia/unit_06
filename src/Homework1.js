@@ -1,16 +1,16 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 class Homework1 extends React.Component  {
 	constructor (props) {
 		super();
 		console.log(props);
 		this.state = {
-			s1: props.p1
+			s1: props.data.p1
 		}
-		let s2 = 201;
-		console.log(s1);
-		console.log(s2);
+		this.s2 = 201;
+		console.log(this.state.s1);
+		console.log(this.s2);
 	};
 
 	// const[stp1, setSt1] = useState();
@@ -27,16 +27,46 @@ class Homework1 extends React.Component  {
 		return (
 			<>
 				{console.log(this.s2)}
-				<div>{this.state.s1}</div>
-				<div>{this.s2}</div>
+				<div>
+					{this.state.s1}
+				</div>
+				<div>
+					{this.s2}
+				</div>
 			</>
 		)
 	}
 
-	componentDidMount() {
-		s1 = s1 + 5;
-		s2 = s2 + 5;
-	}
+  componentDidMount() {
+    let val1 = this.state.s1;
+    val1 += 5;
+    this.setState({ s1: val1 });
+    this.s2 += 5;
+  }
+
+  buttonHandler = () => {
+    let val1 = this.state.s1;
+    val1 += 50;
+    this.setState({ s1: val1 });
+    this.s2 += 50;
+		console.log(this.state.s1);
+		console.log(this.s2);
+  };
+
+	render() {
+    return (
+      <>
+        <div>{this.state.s1}</div>
+        <div>{this.s2}</div>
+        <button onClick={this.buttonHandler}>Plus 50</button>
+      </>
+    );
+
+  }
+	// componentDidMount() {
+	// 	s1 = s1 + 5;
+	// 	s2 = s2 + 5;
+	// }
 
 // 	function newFunc1() {
 // 		const[t3, setSt3] = useState();
