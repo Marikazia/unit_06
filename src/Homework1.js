@@ -26,6 +26,7 @@ class Homework1 extends React.Component  {
 	render() {
 		return (
 			<>
+			
 				{console.log(this.s2)}
 				<div>
 					{this.state.s1}
